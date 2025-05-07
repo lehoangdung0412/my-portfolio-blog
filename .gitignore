@@ -1,0 +1,4 @@
+.idea
+client/.next
+client/node_modules
+client/next-env.d.ts
