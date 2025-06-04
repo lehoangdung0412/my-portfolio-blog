@@ -12,6 +12,6 @@ type Profile struct {
 // Contact represents contact information
 type Contact struct {
 	Email    string `json:"email"`
+	LinkedIn string `json:"linkedin"`
 	GitHub   string `json:"github"`
-	Facebook string `json:"facebook"`
 }

@@ -9,7 +9,7 @@ import {
   chakra,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { FaInstagram, FaGithub, FaFacebook} from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { ReactNode } from 'react';
 import NextLink from 'next/link';
 
@@ -86,8 +86,8 @@ export default function Footer() {
               Contact
             </Text>
             <Link href={'mailto:lehoangdung.hcmus@gmail.com'}>Email</Link>
+            <Link href={'https://www.facebook.com/le.hoangdung.37'}>LinkedIn</Link>
             <Link href={'https://github.com/lehoangdung0412'}>GitHub</Link>
-            <Link href={'https://www.facebook.com/le.hoangdung.37'}>Facebook</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
@@ -102,8 +102,8 @@ export default function Footer() {
           <SocialButton label={'GitHub'} href={'https://github.com/lehoangdung0412'}>
             <FaGithub />
           </SocialButton>
-          <SocialButton label={'Facebook'} href={'https://www.facebook.com/le.hoangdung.37'}>
-            <FaFacebook />
+          <SocialButton label={'LinkedIn'} href={'https://www.facebook.com/le.hoangdung.37'}>
+            <FaLinkedin />
           </SocialButton>
           <SocialButton label={'Instagram'} href={'https://www.instagram.com/hoangdung.nth'}>
             <FaInstagram />

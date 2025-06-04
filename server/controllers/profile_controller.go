@@ -16,8 +16,8 @@ func GetProfile(c *gin.Context) {
 		Skills:      []string{"Golang", "Next.js", "React", "TypeScript", "Node.js", "Docker"},
 		Contact: models.Contact{
 			Email:    "lehoangdung.hcmus@gmail.com",
+			LinkedIn: "https://www.facebook.com/le.hoangdung.37",
 			GitHub:   "https://github.com/lehoangdung0412",
-			Facebook: "https://www.facebook.com/le.hoangdung.37",
 		},
 	}
 

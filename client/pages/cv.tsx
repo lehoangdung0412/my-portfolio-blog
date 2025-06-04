@@ -24,7 +24,7 @@ import {
   WrapItem,
 } from '@chakra-ui/react';
 import { CheckCircleIcon, DownloadIcon, EmailIcon } from '@chakra-ui/icons';
-import { FaGithub, FaLanguage, FaAward, FaCertificate, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLanguage, FaAward, FaCertificate, FaLinkedin } from 'react-icons/fa';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -110,63 +110,76 @@ const CVPage: NextPage = () => {
         // Fallback data in case API is not available
         setCV({
           // Personal Information
-          name: "Vincent",
-          title: "Full Stack Developer",
-          description: "Passionate developer with expertise in Golang, Next.js, and more.",
+          name: "Nguyen Thi Hue",
+          title: "Manual Tester",
+          description: "I am looking forward to learning, leveling up my Testing skillset and\n" +
+              "working in a friendly, dynamic, and creative environment. I would love\n" +
+              "to apply my knowledge to work and contribute to the development of your\n" +
+              "company. Working in your organization would be a great opportunity for\n" +
+              "me to gain insight into the working environment as well as earning\n" +
+              "valuable experience.",
           imageUrl: "https://via.placeholder.com/300",
 
           // Contact Information
           contact: {
-            email: "your.email@example.com",
-            linkedin: "https://linkedin.com/in/yourprofile",
-            github: "https://github.com/yourusername",
+            email: "nguyenthihue14163@gmail.com",
+            linkedin: "https://linkedin.com/in/hue-nguyen-thi-4b3489219",
+            github: "https://github.com/HueYomi",
           },
 
           // Professional Information
           education: [
             {
-              institution: 'University Name',
-              degree: 'Bachelor of Science in Computer Science',
-              year: '2015-2019',
+              institution: 'University of Science',
+              degree: 'Bachelor of Science in Chemistry',
+              year: '2013-2017',
             },
             {
-              institution: 'Another University',
-              degree: 'Master of Science in Software Engineering',
-              year: '2019-2021',
+              institution: 'University of Economics HCM City- Global Economic Center',
+              degree: 'Import- Export Certificate',
+              year: '2022',
             },
           ],
           experience: [
             {
-              company: 'Company Name',
-              position: 'Software Engineer',
-              year: '2019-2022',
-              description: 'Developed and maintained web applications using Golang and React.',
+              company: 'Habi Baby Clothing',
+              position: 'Co-founder',
+              year: '02/2021-Present',
+              description: 'A website to introduce products, purchasing\n' +
+                  'instructions and contact information for kids and baby fashion shop.',
             },
             {
-              company: 'Another Company',
-              position: 'Senior Developer',
-              year: '2022-Present',
-              description: 'Leading a team of developers building microservices with Golang.',
+              company: 'Learning Testing - Practical Practice Testing VN',
+              position: 'Manual Tester',
+              year: '09/2023-11/2023',
+              description: '...',
+            },
+            {
+              company: 'Final Project at Fresher Training Program',
+              position: 'Manual Tester',
+              year: '11/2022-12/2023',
+              description: 'Calculate hotel fees based on room type,\n' +
+                  'check- in and check- out dates, service fees and discounts if any.',
             },
           ],
           skills: [
-            'Golang', 'Next.js', 'React', 'TypeScript', 'Node.js', 'Docker', 'Kubernetes',
+            'Postman', 'SQL Server Config', 'SQL Server Management', 'JIRA', 'Visual Studio Code', 'Excel',
           ],
           softSkills: [
-            'Team Leadership', 'Communication', 'Problem Solving', 'Agile Methodologies', 'Project Management',
+            'Good in self-directing', 'Teamwork', 'Good in management', 'Problems solving', 'Working under pressure',
           ],
           languages: [
             {
               name: 'English',
-              proficiency: 'Fluent',
+              proficiency: 'Fundamental in reading, writing, and communication',
             },
             {
-              name: 'Vietnamese',
-              proficiency: 'Native',
+              name: 'Chinese',
+              proficiency: 'Fundamental in communication',
             },
             {
-              name: 'French',
-              proficiency: 'Intermediate',
+              name: 'Japanese',
+              proficiency: 'N5',
             },
           ],
           awards: [
@@ -188,19 +201,35 @@ const CVPage: NextPage = () => {
           certificates: [
             {
               id: '1',
-              name: 'AWS Certified Developer',
-              issuer: 'Amazon Web Services',
-              issueDate: '2022-01-15',
-              description: 'Certification for AWS cloud development',
-              imageUrl: 'https://via.placeholder.com/300x200?text=AWS+Certificate',
+              name: 'Introduction to HTML5',
+              issuer: 'University of Michigan',
+              issueDate: '2024-06-24',
+              description: 'Certification for HTML5',
+              imageUrl: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~GSA2JH8BSZDJ/CERTIFICATE_LANDING_PAGE~GSA2JH8BSZDJ.jpeg',
             },
             {
               id: '2',
-              name: 'Certified Kubernetes Administrator',
-              issuer: 'Cloud Native Computing Foundation',
-              issueDate: '2022-06-20',
-              description: 'Certification for Kubernetes administration',
-              imageUrl: 'https://via.placeholder.com/300x200?text=Kubernetes+Certificate',
+              name: 'Introduction to CSS3',
+              issuer: 'University of Michigan',
+              issueDate: '2024-07-11',
+              description: 'Certification for CSS3',
+              imageUrl: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~T53W29ZF23MF/CERTIFICATE_LANDING_PAGE~T53W29ZF23MF.jpeg',
+            },
+            {
+              id: '3',
+              name: 'Foundations of Software Testing and Validation',
+              issuer: 'University of Leeds',
+              issueDate: '2024-07-17',
+              description: 'Certification for Foundations of Software Testing and Validation',
+              imageUrl: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XQQWNRACRWJK/CERTIFICATE_LANDING_PAGE~XQQWNRACRWJK.jpeg',
+            },
+            {
+              id: '4',
+              name: 'Introduction to Databases',
+              issuer: 'Meta',
+              issueDate: '2024-07-21',
+              description: 'Certification for Databases',
+              imageUrl: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~W28FHVTQ67QR/CERTIFICATE_LANDING_PAGE~W28FHVTQ67QR.jpeg',
             },
           ],
           badges: [
@@ -370,6 +399,17 @@ const CVPage: NextPage = () => {
                   Email
                 </Button>
                 <Button
+                    leftIcon={<Icon as={FaLinkedin} />}
+                    colorScheme="blue"
+                    variant="outline"
+                    size="sm"
+                    as="a"
+                    href={cv?.contact?.linkedin}
+                    target="_blank"
+                >
+                  LinkedIn
+                </Button>
+                <Button
                   leftIcon={<Icon as={FaGithub} />}
                   colorScheme="blue"
                   variant="outline"
@@ -379,17 +419,6 @@ const CVPage: NextPage = () => {
                   target="_blank"
                 >
                   GitHub
-                </Button>
-                <Button
-                    leftIcon={<Icon as={FaFacebook} />}
-                    colorScheme="blue"
-                    variant="outline"
-                    size="sm"
-                    as="a"
-                    href={cv?.contact?.linkedin}
-                    target="_blank"
-                >
-                  Facebook
                 </Button>
               </HStack>
             </Box>
@@ -417,6 +446,52 @@ const CVPage: NextPage = () => {
               </ListItem>
             ))}
           </List>
+        </Box>
+
+        {/* Professional Experience */}
+        <Box
+            p={8}
+            bg={useColorModeValue('white', 'gray.700')}
+            shadow="md"
+            rounded="lg"
+            mb={8}
+            borderWidth="1px"
+            borderColor={useColorModeValue('gray.200', 'gray.600')}
+        >
+          <Heading as="h2" size="lg" mb={6}>
+            Professional Experience
+          </Heading>
+          <Stack spacing={8}>
+            {cv?.experience?.map((exp, index) => (
+                <Box key={index}>
+                  <Flex
+                      justify="space-between"
+                      align={{ base: "flex-start", md: "center" }}
+                      direction={{ base: "column", md: "row" }}
+                      gap={{ base: 2, md: 0 }}
+                  >
+                    <Box>
+                      <Heading as="h3" size="md">
+                        {exp.position}
+                      </Heading>
+                      <Text fontSize="lg" fontWeight="medium" mt={1}>
+                        {exp.company}
+                      </Text>
+                    </Box>
+                    <Badge
+                        colorScheme="blue"
+                        fontSize="md"
+                        p={2}
+                        borderRadius="md"
+                    >
+                      {exp.year}
+                    </Badge>
+                  </Flex>
+                  <Text mt={3}>{exp.description}</Text>
+                  {index < cv.experience.length - 1 && <Divider mt={6} />}
+                </Box>
+            ))}
+          </Stack>
         </Box>
 
         {/* Skills Grid */}
@@ -481,52 +556,6 @@ const CVPage: NextPage = () => {
             </Wrap>
           </Box>
         </SimpleGrid>
-
-        {/* Professional Experience */}
-        <Box
-          p={8}
-          bg={useColorModeValue('white', 'gray.700')}
-          shadow="md"
-          rounded="lg"
-          mb={8}
-          borderWidth="1px"
-          borderColor={useColorModeValue('gray.200', 'gray.600')}
-        >
-          <Heading as="h2" size="lg" mb={6}>
-            Professional Experience
-          </Heading>
-          <Stack spacing={8}>
-            {cv?.experience?.map((exp, index) => (
-              <Box key={index}>
-                <Flex 
-                  justify="space-between" 
-                  align={{ base: "flex-start", md: "center" }}
-                  direction={{ base: "column", md: "row" }}
-                  gap={{ base: 2, md: 0 }}
-                >
-                  <Box>
-                    <Heading as="h3" size="md">
-                      {exp.position}
-                    </Heading>
-                    <Text fontSize="lg" fontWeight="medium" mt={1}>
-                      {exp.company}
-                    </Text>
-                  </Box>
-                  <Badge 
-                    colorScheme="blue" 
-                    fontSize="md" 
-                    p={2}
-                    borderRadius="md"
-                  >
-                    {exp.year}
-                  </Badge>
-                </Flex>
-                <Text mt={3}>{exp.description}</Text>
-                {index < cv.experience.length - 1 && <Divider mt={6} />}
-              </Box>
-            ))}
-          </Stack>
-        </Box>
 
         {/* Certificates */}
         <Box

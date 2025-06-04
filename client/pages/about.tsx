@@ -16,7 +16,7 @@ import {
   Icon,
 } from '@chakra-ui/react';
 import { CheckCircleIcon, CheckIcon, EmailIcon } from '@chakra-ui/icons';
-import { FaFacebook, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -29,8 +29,8 @@ interface ProfileData {
   skills: string[];
   contact: {
     email: string;
+    linkedin: string;
     github: string;
-    facebook: string;
   };
 }
 
@@ -53,8 +53,8 @@ const About: NextPage = () => {
           skills: ['Golang', 'Next.js', 'React', 'TypeScript', 'Node.js', 'Docker'],
           contact: {
             email: 'your.email@example.com',
+            linkedin: 'https://www.facebook.com/le.hoangdung.37',
             github: 'https://github.com/yourusername',
-            facebook: 'https://www.facebook.com/le.hoangdung.37',
           },
         });
       } finally {
@@ -128,6 +128,17 @@ const About: NextPage = () => {
                   Email
                 </Button>
                 <Button
+                    leftIcon={<Icon as={FaLinkedin} />}
+                    colorScheme="blue"
+                    variant="outline"
+                    as="a"
+                    href={profile?.contact.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </Button>
+                <Button
                   leftIcon={<Icon as={FaGithub} />}
                   colorScheme="blue"
                   variant="outline"
@@ -137,17 +148,6 @@ const About: NextPage = () => {
                   rel="noopener noreferrer"
                 >
                   GitHub
-                </Button>
-                <Button
-                    leftIcon={<Icon as={FaFacebook} />}
-                    colorScheme="blue"
-                    variant="outline"
-                    as="a"
-                    href={profile?.contact.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                  Facebook
                 </Button>
               </Stack>
             </Box>

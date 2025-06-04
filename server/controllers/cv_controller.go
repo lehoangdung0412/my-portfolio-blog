@@ -17,63 +17,69 @@ import (
 func getCV() models.CV {
 	return models.CV{
 		// Personal Information
-		Name:        "Vincent",
-		Title:       "Full Stack Developer",
-		Description: "Passionate developer with expertise in Golang, Next.js, and more.",
+		Name:        "Nguyen Thi Hue",
+		Title:       "Manual Tester",
+		Description: "I am looking forward to learning, leveling up my Testing skillset and working in a friendly, dynamic, and creative environment. I would love to apply my knowledge to work and contribute to the development of your company. Working in your organization would be a great opportunity for me to gain insight into the working environment as well as earning valuable experience.",
 		ImageURL:    "https://via.placeholder.com/300",
 
 		// Contact Information
 		Contact: models.Contact{
-			Email:    "lehoangdung.hcmus@gmail.com",
-			GitHub:   "https://github.com/lehoangdung0412",
-			Facebook: "https://www.facebook.com/le.hoangdung.37",
+			Email:    "nguyenthihue14163@gmail.com",
+			LinkedIn: "https://linkedin.com/in/hue-nguyen-thi-4b3489219",
+			GitHub:   "https://github.com/HueYomi",
 		},
 
 		// Professional Information
 		Education: []models.Education{
 			{
-				Institution: "University Name",
-				Degree:      "Bachelor of Science in Computer Science",
-				Year:        "2015-2019",
+				Institution: "University of Science",
+				Degree:      "Bachelor of Science in Chemistry",
+				Year:        "2013-2017",
 			},
 			{
-				Institution: "Another University",
-				Degree:      "Master of Science in Software Engineering",
-				Year:        "2019-2021",
+				Institution: "University of Economics HCM City- Global Economic Center",
+				Degree:      "Import- Export Certificate",
+				Year:        "2022",
 			},
 		},
 		Experience: []models.Experience{
 			{
-				Company:     "Company Name",
-				Position:    "Software Engineer",
-				Year:        "2019-2022",
-				Description: "Developed and maintained web applications using Golang and React.",
+				Company:     "Final Project at Fresher Training Program",
+				Position:    "Manual Tester",
+				Year:        "11/2022-12/2023",
+				Description: "Calculate hotel fees based on room type, check-in and check-out dates, service fees and discounts if any.",
 			},
 			{
-				Company:     "Another Company",
-				Position:    "Senior Developer",
-				Year:        "2022-Present",
-				Description: "Leading a team of developers building microservices with Golang.",
+				Company:     "Learning Testing - Practical Practice Testing VN",
+				Position:    "Manual Tester",
+				Year:        "09/2023-11/2023",
+				Description: "...",
+			},
+			{
+				Company:     "Habi Baby Clothing",
+				Position:    "Co-founder",
+				Year:        "02/2021-Present",
+				Description: "A website to introduce products, purchasing instructions and contact information for kids and baby fashion shop.",
 			},
 		},
 		Skills: []string{
-			"Golang", "Next.js", "React", "TypeScript", "Node.js", "Docker", "Kubernetes",
+			"Postman", "SQL Server Config", "SQL Server Management", "JIRA", "Visual Studio Code", "Excel",
 		},
 		SoftSkills: []string{
-			"Team Leadership", "Communication", "Problem Solving", "Agile Methodologies", "Project Management",
+			"Good in self-directing", "Teamwork", "Good in management", "Problems solving", "Working under pressure",
 		},
 		Languages: []models.Language{
 			{
 				Name:        "English",
-				Proficiency: "Fluent",
+				Proficiency: "Basic in communication",
 			},
 			{
-				Name:        "Vietnamese",
-				Proficiency: "Native",
+				Name:        "Japanese",
+				Proficiency: "N5",
 			},
 			{
-				Name:        "French",
-				Proficiency: "Intermediate",
+				Name:        "Chinese",
+				Proficiency: "Basic in communication",
 			},
 		},
 		Awards: []models.Award{
@@ -95,19 +101,35 @@ func getCV() models.CV {
 		Certificates: []models.Certificate{
 			{
 				ID:          "1",
-				Name:        "AWS Certified Developer",
-				Issuer:      "Amazon Web Services",
-				IssueDate:   parseTime("2022-01-15"),
-				Description: "Certification for AWS cloud development",
-				ImageURL:    "https://via.placeholder.com/300x200?text=AWS+Certificate",
+				Name:        "Introduction to HTML5",
+				Issuer:      "University of Michigan",
+				IssueDate:   parseTime("2024-06-24"),
+				Description: "Certification for HTML5",
+				ImageURL:    "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~GSA2JH8BSZDJ/CERTIFICATE_LANDING_PAGE~GSA2JH8BSZDJ.jpeg",
 			},
 			{
 				ID:          "2",
-				Name:        "Certified Kubernetes Administrator",
-				Issuer:      "Cloud Native Computing Foundation",
-				IssueDate:   parseTime("2022-06-20"),
-				Description: "Certification for Kubernetes administration",
-				ImageURL:    "https://via.placeholder.com/300x200?text=Kubernetes+Certificate",
+				Name:        "Introduction to CSS3",
+				Issuer:      "University of Michigan",
+				IssueDate:   parseTime("2024-07-11"),
+				Description: "Certification for CSS3",
+				ImageURL:    "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~T53W29ZF23MF/CERTIFICATE_LANDING_PAGE~T53W29ZF23MF.jpeg",
+			},
+			{
+				ID:          "3",
+				Name:        "Foundations of Software Testing and Validation",
+				Issuer:      "University of Leeds",
+				IssueDate:   parseTime("2024-07-17"),
+				Description: "Certification for Foundations of Software Testing and Validation",
+				ImageURL:    "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XQQWNRACRWJK/CERTIFICATE_LANDING_PAGE~XQQWNRACRWJK.jpeg",
+			},
+			{
+				ID:          "4",
+				Name:        "Introduction to Databases",
+				Issuer:      "Meta",
+				IssueDate:   parseTime("2024-07-21"),
+				Description: "Certification for Databases",
+				ImageURL:    "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~W28FHVTQ67QR/CERTIFICATE_LANDING_PAGE~W28FHVTQ67QR.jpeg",
 			},
 		},
 		Badges: []models.Badge{
